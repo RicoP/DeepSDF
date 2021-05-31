@@ -1,0 +1,8 @@
+LatentCodes
+ModelParameters
+OptimizerParameters
+Reconstructions
+valuation
+
+Logs.pth
+*.csv

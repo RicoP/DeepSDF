@@ -1,11 +1,3 @@
 build/
 data_*
 __pycache__
-examples/cups/*
-examples/keyboards/*
-examples/sofas/*
-examples/splits/sv2_cups_test.json
-examples/splits/sv2_cups_train.json
-examples/splits/sv2_keyboards_test.json
-examples/splits/sv2_keyboards_train.json
-
