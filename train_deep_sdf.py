@@ -254,7 +254,7 @@ def main_function(experiment_directory, continue_from, batch_split):
 
     specs = ws.load_experiment_specifications(experiment_directory)
 
-    logging.info("Experiment description: \n" + specs["Description"])
+    #logging.info("Experiment description: \n" + specs["Description"])
 
     data_source = specs["DataSource"]
     train_split_file = specs["TrainSplit"]
@@ -485,6 +485,10 @@ def main_function(experiment_directory, continue_from, batch_split):
             batch_loss = 0.0
 
             optimizer_all.zero_grad()
+
+
+            #torch.cuda.empty_cache()
+            #print(torch.cuda.memory_summary(device=None, abbreviated=False))
 
             for i in range(batch_split):
 

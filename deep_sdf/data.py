@@ -101,6 +101,9 @@ def unpack_sdf_samples_from_ram(data, subsample=None):
 
     pos_size = pos_tensor.shape[0]
     neg_size = neg_tensor.shape[0]
+    
+    if half > pos_size:
+        print("WARNING: unpack_sdf_samples_from_ram odd sizes", half, pos_size, neg_size)
 
     pos_start_ind = random.randint(0, pos_size - half)
     sample_pos = pos_tensor[pos_start_ind : (pos_start_ind + half)]
